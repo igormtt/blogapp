@@ -1,0 +1,42 @@
+ {{#if user}}
+
+
+ <div style="color: white; border-radius: 6px;" class="jumbotron jumbotron-fluid bg-dark p-5 mt-4">
+    <div class="container">
+      <h1 class="display-4">Olá, {{user.nome}}</h1>
+      <p class="lead" style="color: gray;">Seja bem-vindo ao nosso painel administrativo!</p>
+ </div>
+ </div>
+ 
+ {{/if}}
+
+<body style="background-color: 		#D3D3D3"></body>
+
+<div class="accordion mt-4" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h5>Categorias</h5>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h6>Aqui você encontrará as nossas categorias. Onde pode-se registrar, apagar, editar e listar todas as categorias presentes no nosso sistema.</h6>
+        <a href="/admin/categorias"><button class="btn btn-success mt-4">Acessar categorias</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h5>Postagens</h5>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <h6>Aqui você encontrará as nossas postagens. Onde pode-se registrar, apagar, editar e listar todas as postagens presentes no nosso sistema.</h6>
+        <a href="/admin/postagens"><button class="btn btn-success mt-4">Acessar postagens</button></a>
+      </div>
+    </div>
+  </div>
+ 
